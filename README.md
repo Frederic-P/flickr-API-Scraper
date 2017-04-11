@@ -24,5 +24,7 @@ NOTES:
 
 - Written for Python2
 
+- These script use the flickrapi module created by Stuvel (https://stuvel.eu/flickrapi-doc/2-calling.html). You'll need to install this through PIP on your machine.
+
 Best of luck
 Frédéric Pietowski. 
