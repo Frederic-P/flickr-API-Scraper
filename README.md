@@ -6,7 +6,7 @@ These simple Python scripts allow you to scrape data from the vast FLICKR reposi
 1) City Scraper.py
 You'll need to edit this script and provide your own API key and secret for it to work. Next add X and Y coordinates and a radius to scrape Flickr for the data you want.
 
-2)Get unique user IDs.py
+2) Get unique user IDs.py
 This script goes over the data acquired by (1)) and creates a file with the unique users.
 
 3) User Scraper.py
