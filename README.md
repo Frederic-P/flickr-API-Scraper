@@ -1,0 +1,2 @@
+# flickr-API-Scraper
+These simple Python scripts allow you to scrape data from the vast FLICKR repository. You can use this to track visitors... to your city. Simply change the X and Y coordinates and the radius in the main scraper and then use the other scripts to gather the location of those users and the date those photos were taken. You can then use tools like Tableau10 to provide a visualisation or compare your city to other cities.... If you plan on using these scrapers, I'd like to be credited for writing them. 
