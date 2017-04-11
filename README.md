@@ -17,10 +17,12 @@ This script goes over the users created by (2)) and gets their location. If no l
 This script goes over all photos that are part of the dataset, it gets the time they were taken (YYYY-MM-DD HH:MM:SS) and the date they were uploaded (in UNIXtime). You can use this to create timeseries of your data. A TRY and EXCEPT clause have been added since it may happen that users delete a photo, if this is the case, then "null" values will be written in the outputfile.
 
 
+NOTES:
+- All files create .CSV files, any .TXT file that gets created in the process is used to track progress, these can be deleted once all data has been scraped.
 
-All files create .CSV files, any .TXT file that gets created in the process is used to track progress, these can be deleted once all data has been scraped.
+- Be sure to get your own API Keys.
 
-Be sure to get your own API Keys
+- Written for Python2
 
 Best of luck
 Frédéric Pietowski. 
