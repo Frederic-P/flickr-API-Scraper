@@ -75,8 +75,8 @@ while add_data:
         parsed = json.loads(shots.decode('utf-8'))
         for key in parsed:
             x =  type(parsed[key])
-            if str(x) == "<type 'dict'>":   #So there is a dictionary in a list in a dictionary in a dictionary... What did I do wrong??
-                newdict = parsed[key]       #there has to be a better way??
+            if str(x) == "<type 'dict'>":   
+                newdict = parsed[key]       
                 for key in newdict:
                     y =  type(newdict[key])
                     if str(y) == "<type 'list'>":
@@ -123,33 +123,3 @@ print "Process complete"
 
 ext = raw_input("Press enter to terminate the program")
 
-
-
-
-
-
-
-""" Old code to retrieve user's location"""
-"""                                location_var = flickr.profile.getProfile(api_key= api_key, user_id = user_internal_id)
-                                parsedloc = json.loads(location_var.decode('utf-8'))
-
-                                for key in parsedloc:
-                                    a = type(parsedloc[key])
-                                    if str(a) == "<type 'dict'>":
-                                        b = parsedloc[key]
-                                        for key in b:
-                                            try:
-                                                country = str(b["country"].encode("utf-8"))
-                                                city = str(b["city"].encode("utf-8"))
-                                            except:
-                                                country = "null"
-                                                city = "null"
-
-                                if len(country) ==0:
-                                    country = "null"
-                                if len(city) ==0:
-                                    city = "null"
-
-                                print city
-                                print country
-"""
